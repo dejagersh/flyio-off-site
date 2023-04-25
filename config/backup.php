@@ -45,6 +45,14 @@ return [
                 'your-fly-mysql-database',
                 'your-fly-postgres-database',
             ],
+
+            /**
+             * Not relevant for this tool.
+             */
+            'files' => [
+                'include' => [],
+                'exclude' => [],
+            ]
         ],
 
         /*
