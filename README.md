@@ -19,8 +19,8 @@ Configure it in your `fly.toml` file.
 
 ### Configure your databases
 
-Configure your databases in `config/databases.php`. These connections you will need to specify in `config/backup.php` in
-the `backup.source.databases` key.
+Set up your databases in `config/databases.php`. Specify the database connections you want to back up in
+`config/backup.php`, under the `backup.source.databases` key.
 
 ### Configure the backup schedule
 
