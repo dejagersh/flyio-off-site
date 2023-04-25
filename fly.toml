@@ -1,3 +1,6 @@
+app = "appname"
+primary_region = "ams"
+
 [build]
   [build.args]
     PHP_VERSION = "8.2"
