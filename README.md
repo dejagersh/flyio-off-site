@@ -1,4 +1,4 @@
-# Fly-Offsite-Backup-Manager
+# flyio-off-site
 
 Easily automate off-site backup generation for databases hosted on Fly.io. It's a small Laravel application based
 on [spatie/laravel-backup](https://github.com/spatie/laravel-backup).
