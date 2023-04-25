@@ -1,7 +1,14 @@
-# flyio-off-site
+# Flyio-off-site
 
-Easily automate off-site backup generation for databases hosted on Fly.io. It's a small Laravel application based
-on [spatie/laravel-backup](https://github.com/spatie/laravel-backup).
+Easily automate off-site backup generation for databases hosted on Fly.io.
+
+## Introduction
+
+Installing `spatie/laravel-backup` to back up your app DB works great, but having to install it in every app can be
+tedious.
+Also, this approach doesn't work for apps that don't use Laravel. This app solves these problem by
+running `spatie/laravel-backup` on separate Fly.io VM dedicated to making backups. This way your apps don't need to
+run `spatie/laravel-backup`, that's now taken care of by a single Fly.io VM.
 
 ## Getting Started
 
@@ -33,6 +40,10 @@ Notifications are currently by default configured to be sent to Slack. You can c
 For this to work you just need to configure the webhook url. For more advanced configuration options, I'll refer you to
 Spatie docs configuring
 notifications: [Sending Notifications](https://spatie.be/docs/laravel-backup/v8/sending-notifications/overview)
+
+### Deploy
+
+Run `fly deploy` to deploy the app to Fly.io. You can check the status of the deployment by running `fly status`.
 
 ## On-Demand Backups
 
