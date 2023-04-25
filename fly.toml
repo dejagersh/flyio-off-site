@@ -10,3 +10,8 @@ primary_region = "ams"
   LOG_CHANNEL = "stderr"
   LOG_LEVEL = "info"
   LOG_STDERR_FORMATTER = "Monolog\\Formatter\\JsonFormatter"
+
+  AWS_ACCESS_KEY_ID = '%AWS_ACCESS_KEY_ID%'
+  AWS_DEFAULT_REGION = '%AWS_DEFAULT_REGION%'
+  AWS_BUCKET = '%bucket%'
+  AWS_USE_PATH_STYLE_ENDPOINT = 'false'

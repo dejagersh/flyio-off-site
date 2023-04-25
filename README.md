@@ -24,11 +24,15 @@ the `backup.source.databases` key.
 
 ### Configure the backup schedule
 
-In `app/Console/Kernel.php` you can configure the backup schedule. By default, it will run every day at 03:00AM.
+In `app/Console/Kernel.php` you can configure the backup schedule. By default, it will run every day at 03:00AM. Here's
+more info on scheduling: https://spatie.be/docs/laravel-backup/v8/installation-and-setup#content-scheduling
 
 ### Notifications
 
 Notifications are currently by default configured to be sent to Slack. You can configure this in `config/backup.php`.
+For this to work you just need to configure the webhook url. For more advanced configuration options, I'll refer you to
+Spatie docs configuring
+notifications: [Sending Notifications](https://spatie.be/docs/laravel-backup/v8/sending-notifications/overview)
 
 ## On-Demand Backups
 
