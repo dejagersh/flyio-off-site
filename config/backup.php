@@ -11,6 +11,44 @@ return [
         'name' => 'fly.io',
 
         'source' => [
+
+            'files' => [
+
+                /*
+                 * The list of directories and files that will be included in the backup.
+                 */
+                'include' => [
+                    base_path(),
+                ],
+
+                /*
+                 * These directories and files will be excluded from the backup.
+                 *
+                 * Directories used by the backup process will automatically be excluded.
+                 */
+                'exclude' => [
+                    base_path('vendor'),
+                    base_path('node_modules'),
+                ],
+
+                /*
+                 * Determines if symlinks should be followed.
+                 */
+                'follow_links' => false,
+
+                /*
+                 * Determines if it should avoid unreadable folders.
+                 */
+                'ignore_unreadable_directories' => false,
+
+                /*
+                 * This path is used to make directories in resulting zip-file relative
+                 * Set to `null` to include complete absolute path
+                 * Example: base_path()
+                 */
+                'relative_path' => null,
+            ],
+
             /*
              * The names of the connections to the databases that should be backed up
              * MySQL, PostgreSQL, SQLite and Mongo databases are supported.
@@ -138,7 +176,7 @@ return [
         ],
 
         'slack' => [
-            'webhook_url' => '',
+            'webhook_url' => 'https://hooks.slack.com/services/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',
 
             /*
              * If this is set to null the default channel of the webhook will be used.
