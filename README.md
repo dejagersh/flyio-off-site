@@ -7,7 +7,7 @@ Easily automate off-site backup generation for databases hosted on Fly.io.
 Installing `spatie/laravel-backup` to back up your app DB works great, but having to install it in every app can be
 tedious.
 Also, this approach doesn't work for apps that don't use Laravel. This app solves these problem by
-running `spatie/laravel-backup` on separate Fly.io VM dedicated to making backups. This way your apps don't need to
+running `spatie/laravel-backup` on a separate Fly.io VM dedicated to making backups. This way your apps don't need to
 run `spatie/laravel-backup`, that's now taken care of by a single Fly.io VM.
 
 ## Getting Started
